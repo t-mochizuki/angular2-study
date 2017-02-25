@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { HttpService } from './http.service';
+
 @Component({
   // HTMLの出力先として<app-root>を指定
   selector: 'app-root',
@@ -10,4 +12,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'こんにちは';
+
+  constructor(private httpService: HttpService) { httpService.print(); }
 }
