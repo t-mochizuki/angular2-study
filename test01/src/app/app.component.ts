@@ -10,6 +10,7 @@ import { HttpService } from './http.service';
   // スタイルシートファイルの指定
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
   title = 'こんにちは';
 
